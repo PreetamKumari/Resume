@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+	--main-bg-color: #E7F6F2;
+	--border-bg-color: 0px 35px 55px rgba(0, 0, 0, 0.2);
+	--container-bg-color: white;
+	--left-title-color: #A5C9CA;
+	--left-bg-color: #395B64;
+	--left-color: #fff;
+	--left-icon-color: #A5C9CA;
+	--right-title-color: #395B64;
+	--right-p-color: #2C3333;	
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: var(--main-bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	margin: 50px;
+	background-color: var(--container-bg-color);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: var(--border-bg-color)
+}
+
+.container .left-side{
+	position: relative;
+	padding: 40px;
+	background-color: var(--left-bg-color);
+}
+
+.profileText {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2)
+}
+
+.profileText .imgBx {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.profileText .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/* height: 100px; */
+	object-fit: cover;
+}
+
+.profileText h2 {
+	color: var(--left-color);
+	font-size: 1.5em;
+	margin-top: 20px;
+	/* text-transform: uppercase; */
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.profileText h2 span {
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+.contact-info, .education, .language {
+	padding-top: 40px;
+}
+
+.title {
+	color: var(--left-color);
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 20px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+
+.contact-info ul {
+	position: relative;
+}
+
+.contact-info ul li {
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.contact-info ul li .icon {
+	color: var(--left-icon-color);
+	width: 30px;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.contact-info ul li .text {
+	color: var(--left-color);
+	font-weight: 300;
+	
+}
+
+.education ul li {
+	color: var(--left-color);
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+
+.education h5 {
+	color: var(--left-title-color);
+	font-weight: 400;
+}
+
+.language li span {
+	font-weight: 400px;
+}
+
+.language ul li {
+	color: var(--left-color);
+}
+/* right-side */
+.container .right-side {
+	padding: 40px;
+	position:relative;
+	background-color: var(--right-bg-color);
+}
+.about {
+	margin-bottom: 50px;
+}
+.title2 {
+	color: var(--right-title-color);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+p {
+	color: var(--right-p-color);
+	text-align: justify;
+}
+
+.about .box {
+	margin-top: 20px;
+	
+}
+
+.about .box .year_company {
+	min-width: 150px;
+	margin-right: 20px;
+}
+
+.about .box .year_company h5 {
+	text-transform: uppercase;
+	color: var(--right-title-color);
+	font-weight: 600;
+}
+
+.about .box .text h4 {
+	color: var(--right-title-color);
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.about .box .text ul li {
+	color: var(--right-p-color);
+	text-align: justify;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.skills ul li {
+	margin-top: 5px;
+	margin-left: 20px;
+	color: var(--right-p-color);
+}
+
+.interest  ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.interest ul li {
+	color: var(--right-p-color);
+	margin-left: 10px;
+}
+
+.theme i{
+	font-size: 30px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: var(--right-title-color);
+}
+
+.dark-theme {
+	--main-bg-color: #171717;
+	--border-bg-color: 0px 0px 30px rgba(59, 66, 68, 0.8);
+	--container-bg-color: black;
+	--left-title-color: #E7F6F2;
+	--left-bg-color: #395B64;
+	--left-color: #fff;
+	--left-icon-color: #EDEDED;
+	--right-title-color: #E7F6F2;
+	--right-p-color: #fff;
+	--right-bg-color: #2C3333;
+	
+}
